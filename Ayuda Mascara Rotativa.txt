@@ -1,0 +1,27 @@
+Generacion de la Mascara Rotativa
+
+La Mascara sera la clave a utilizar para Cifrar y Descifar el mensaje. Al momento de generar la mascara se debe tener encuenta las siguientes condiciones
+
+1. El tamaño minimo de la Matriz sera la Raiz cuadrado del tamaño del mensaje sin espacios con redondeo hacia arriba.Ejemplo: si la longitud del
+      mensaje es de 49, al sacar raíz cuadrada de 49, tendremos 7, por lo tanto el tamaño mínimo de la matriz deberá ser de 7.
+	  
+2. El Numero de perforaciones que tendra la mascara, se obtirn del tamaño del mensaje divido en 4 con redondeo hacia arriba. 
+Ejemplo: si la longitud del mensaje es de 49, al dividirlo entre 4, tendremos 12,25, por lo tanto el número de perforaciones deberá ser de 13.
+
+3. Al realizar la rotacion de la mascara en 90º,180º y 270º como indica el algoritmo, ninguna de la perforaciones se debe sobreponer entre ellas, es decir, ninguna
+de las posiciones de las perforaciones se debe repetir al momento de girar la mascara. 
+
+El programa realiza la validacion de las tres condicones expuestas anteriormente y si uno de una de las tres condiciones no se cumple, el programa informara cual se esta incumpliendo y donde. 
+
+Creacion Archivo Mascara
+
+1. En la primera linea del arhivo, debe ir el tamaño de la matriz NxN.Ejemplo: si la matriz tiene tamaño
+      8x8, deberá escribir en la primera línea del archivo el numero 8.
+
+2. En la siguiente línea se escribe la posicion (coordenada) de la primera perforación,  digitando primero la fila, luego el carácter “,”, y 
+      finalizando con la columna, Ejemplo: 0,2.
+ 
+3. En la siguiente línea se escribe la posicion de la siguiente perforacion, y así  sucesivamente hasta registrar todas las posiciones de las perforaciones de la mascara.
+
+
+En la carpeta ejemplos encontras tres textos con su respectiva mascara

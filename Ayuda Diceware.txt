@@ -1,0 +1,21 @@
+Generacion Contraseña Diceware
+
+Ejecuccion del programa
+El programa Main.java tiene la opcion de  generar una passphrase aleatoria a partir de las palabras contenidas en el archivo diccionarios.txt
+
+Para  generar una passphrase de 5,6 o 7 palabras al azar se debe ejecutar la siguiente sintaxis
+
+java Main -dc  5/6/7 ; 5/6/7 segun el tamaño de la passphrase
+
+
+Ejemplos:
+
+Para generar una passphrase de 5 letras 
+
+java Main -dc 5
+
+
+Para generar una passphrase de 7 letras 
+
+java Main -dc 7
+
