@@ -126,6 +126,18 @@ public class Main {
 			System.out.println();
 			System.out.println();
 			System.out.println("Cosultar algoritmo especifico:");
+			System.out.println();
+			System.out.println("       	-a  ayuda algoritmo ");
+			System.out.println("                            Sintaxis:  java Main <algoritmo> -a");
+			System.out.println("Elaborado por:");
+			System.out.println("       		Manuel Ricardo Munoz Castillo mrmcasti25@gmail.com");
+			System.out.println("       		Monica Gonzalez Libreros  monica.gonzalez.152@gmail.com");
+			System.out.println("Presentado a:");
+			System.out.println("       		Siler Amador Donado samador@unicauca.edu.co");
+			System.out.println();
+			System.out.println(" Universidad Autonoma de Occidente - Especializacion en Seguridad Informatica");
+			System.out.println("                         Primer Semestre 2019");
+			System.out.println();
 			System.out.println("                            Sintaxis:  java Main <algoritmo> -a");
 
 		}
@@ -147,6 +159,16 @@ public class Main {
 			System.out.println("Ejemplo:");
 			System.out.println("       Cifrar:      java Main -mr -c quijote.txt mascaraquijote.txt");
 			System.out.println("       Descifrar:   java Main -mr -d quijote.cifrado mascaraquijote.txt");
+			System.out.println();
+			System.out.println("Elaborado por:");
+			System.out.println("       		Manuel Ricardo Munoz Castillo mrmcasti25@gmail.com");
+			System.out.println("       		Monica Gonzalez Libreros  monica.gonzalez.152@gmail.com");
+			System.out.println();
+			System.out.println("Presentado a:");
+			System.out.println("       		Siler Amador Donado samador@unicauca.edu.co");
+			System.out.println();
+			System.out.println(" Universidad Autonoma de Occidente - Especializacion en Seguridad Informatica");
+			System.out.println("                            Primer Semestre 2019");
 		}
 		if (imenu == 3) {
 			System.out.println("********** CONTRASENHA DECIWARE  ************");
@@ -155,11 +177,21 @@ public class Main {
 			System.out.println();
 			System.out.println("<Nota>:");
 			System.out.println("      Para ejercicio practico el numero de palabra valida esta entre 5, 6 y 7.");
-			System.out.println("      Los idiomas soportados son Ingles y espanhol e Italiano");
+			System.out.println("      Los idiomas soportados son Ingles y espanol e Italiano");
 			System.out.println("Ejemplo:");
-			System.out.println("      para espanhol: java Main -dc 5 es");
+			System.out.println("      para espanol: java Main -dc 5 es");
 			System.out.println("      para ingles:   java Main -dc 5 en");
-			System.out.println("      para ingles:   java Main -dc 5 it");
+			System.out.println("      para italiano:   java Main -dc 5 it");
+			System.out.println();
+			System.out.println("Elaborado por:");
+			System.out.println("       		Manuel Ricardo Munoz Castillo mrmcasti25@gmail.com");
+			System.out.println("       		Monica Gonzalez Libreros  monica.gonzalez.152@gmail.com");
+			System.out.println();
+			System.out.println("Presentado a:");
+			System.out.println("       		Siler Amador Donado samador@unicauca.edu.co");
+			System.out.println();
+			System.out.println(" Universidad Autonoma de Occidente - Especializacion en Seguridad Informatica");
+			System.out.println("                            Primer Semestre 2019");
 		}
 	}
 
