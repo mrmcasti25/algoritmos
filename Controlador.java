@@ -157,7 +157,7 @@ public class Controlador {
 			// writer.print(textCifrado.toString());
 			// writer.close();
 
-			OutputStream fout = new FileOutputStream(file.getName().replace(".txt", "") + ".cifrado");
+			OutputStream fout = new FileOutputStream(file.getName().replace(".txt", "") + ".cif");
 			OutputStream bout = new BufferedOutputStream(fout);
 			OutputStreamWriter out = new OutputStreamWriter(bout, "8859_1");
 			out.write(textCifrado.toString());
