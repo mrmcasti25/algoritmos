@@ -242,13 +242,13 @@ public class Controlador {
 
 				MatrizB = rotarMatriz90Grados(MatrizB);
 				File file = new File(rutaArchivo);
-				PrintWriter writer = new PrintWriter(file.getName().replace(".cifrado", "") + ".descifrado",
+				PrintWriter writer = new PrintWriter(file.getName().replace(".cif", "") + ".des",
 						"ISO-8859-1");
 				writer.print(textoDescifrado.toString());
 				writer.close();
 			}
 
-			PrintWriter writer = new PrintWriter("matrizLlenaCifrada" + ".cifrado", "ISO-8859-1");
+			PrintWriter writer = new PrintWriter("matrizLlenaCifrada" + ".cif", "ISO-8859-1");
 			writer.print(linesDes.toString());
 			writer.close();
 
@@ -317,14 +317,24 @@ public class Controlador {
 
 	// DECIWARE
 	// LEER EL ARCHIVO Y ALMACENAR EN UNA MATRIZ
-	public void crearDiccionario(int nroPalabras) {
+	public void crearDiccionario(int nroPalabras, String idioma) {
 		String txtDiccionario;
 		try {
 			String cadena;
 			HashMap<String, String> keys = new HashMap<String, String>();
 			
+			
+			String nombreDiccionario="";
+			if(idioma.equals("es") || idioma.equals("ES") || idioma.equals("Es") ||  idioma.equals("eS"))
+				nombreDiccionario="diccionario.txt";
+			if(idioma.equals("en") || idioma.equals("EN") || idioma.equals("En") ||  idioma.equals("eN"))
+				nombreDiccionario="diccionarioingles.txt";
+			if(idioma.equals("it") || idioma.equals("It") || idioma.equals("iT") ||  idioma.equals("IT"))
+				nombreDiccionario="diccionarioitaliano.txt";
+			
+			
 			// lectura del archivo diccionarioy mapeo
-			File fi = new File("diccionario.txt");
+			File fi = new File(nombreDiccionario);
 			InputStreamReader fr = new InputStreamReader(new FileInputStream(fi), "8859_1");
 			BufferedReader b = new BufferedReader(fr);
 
